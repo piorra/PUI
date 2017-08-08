@@ -1,0 +1,86 @@
+.card{
+    box-shadow: 0px 5px 10px -2.5px rgba(0,0,0,.5);
+    border-radius: 2.5px;
+    overflow: hidden;
+    margin: 5px 0px;
+    background-color: #fff;
+    .head{
+        width: 100%;
+    }
+    .body{
+        padding: 15px;
+        position: relative;
+    }
+    .footer{
+        text-align: left;
+        padding: 5px 10px;
+        font-size: 80%;
+    }
+    &.hover-effect{
+        transition: .55s;
+        &.--is-hovered{
+            box-shadow: 0px 8px 22px 3px rgba(0,0,0,.5);
+        }
+    }
+    .card-btn{
+        position: absolute;
+        border: none;
+        touch-action: manipulation;
+        user-select: none;
+        box-shadow: 0px 1px 2px rgba(0,0,0,.4);
+        border-radius: 100%;
+        transition: .3s;
+        color: #fff;
+        .ripple-container{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            .waves-ripple{
+                background-color: rgba(white, .5)
+            }
+        }
+        height: 44px;
+        width: 44px;
+        right: 15px;
+        font-size: 1rem;
+        top: -28px;
+        &.lg{
+            height: 58px;
+            width: 58px;
+            font-size: 1.5rem;
+            top: -35px;
+        }
+        &.sm{
+            font-size: .75rem;
+            width: 33px;
+            height: 33px;
+            top: -21.5px;
+        }
+        &.xs{
+            height: 25px;
+            width: 25px;
+            font-size: .5rem;
+            top: -18.5px;
+        }
+        &.primary{
+            background-color: $primary
+        }
+        &.green{
+            background-color: $green
+        }
+        &.blue{
+            background-color: $blue
+        }
+        &.red{
+            background-color: $red
+        }
+        &.white{
+            background-color: #fff
+        }
+        &:hover, &:focus{
+            box-shadow: 0px 3px 6px rgba(0,0,0,.5)
+        }
+    }
+}
