@@ -110,3 +110,66 @@ a.pui-link{
     }
     display: inline-block;
 }
+
+.badge{
+    font-size: 50%;
+    background-color: red;
+    height: 2em;
+    vertical-align: middle;
+    min-width: 2em;
+    line-height: 2em;
+    color: #fff;
+    border-radius: 1000px;
+    display: inline-block;
+    @include no-select;
+    &.raised{
+        box-shadow: 0 .25em .47em -1px rgba(0,0,0,.35)
+    }
+    &.float-left{
+        float: left !important;
+    }
+}
+
+.btn{
+    &:not(.simple){
+        .badge{
+            background-color: #fff
+        }
+        &.primary{
+            .badge{
+                color: $primary
+            }
+        }
+        &.gray{
+            .badge{
+                color: $gray
+            }
+        }
+        &.blue{
+            .badge{
+                color: $blue
+            }
+        }
+        &.yellow{
+            .badge{
+                color: $yellow
+            }
+        }
+        &.green{
+            .badge{
+                color: $green
+            }
+        }
+        &.red{
+            .badge{
+                color: $red
+            }
+        }
+        &.white{
+            .badge{
+                color: #fff;
+                background-color: #999 !important
+            }
+        }
+    }
+}
