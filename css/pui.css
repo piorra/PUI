@@ -625,16 +625,16 @@ optgroup {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .btn.primary {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .btn.primary .ripple-container .waves-ripple {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .btn.primary.simple {
-  color: orangered;
+  color: #673ab7;
 }
 .btn.primary.simple .ripple-container .waves-ripple {
-  background-color: rgba(255, 69, 0, 0.3);
+  background-color: rgba(103, 58, 183, 0.3);
 }
 .btn.gray {
   background-color: gray;
@@ -724,7 +724,7 @@ optgroup {
 }
 
 .primary-txt {
-  color: orangered !important;
+  color: #673ab7 !important;
 }
 
 .black-txt {
@@ -866,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 .pui-tab.primary ul.tab-head {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .pui-tab.blue ul.tab-head {
   background-color: #03a9f4;
@@ -901,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: inherit !important;
 }
 .pui-nav.primary {
-  background-color: orangered;
+  background-color: #673ab7;
   box-shadow: 0px 5px 10px -1.25px rgba(0, 0, 0, 0.5);
 }
 .pui-nav.primary .side .nav-toggle {
@@ -1113,7 +1113,7 @@ label.lbl {
   font-weight: bold;
 }
 label.lbl.primary {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 label.lbl.gray {
   background-color: gray;
@@ -1140,7 +1140,7 @@ label.lbl.red {
 
 a.pui-link {
   position: relative;
-  color: orangered;
+  color: #673ab7;
 }
 a.pui-link.no-line::after {
   content: none;
@@ -1207,7 +1207,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   background-color: #fff;
 }
 .btn:not(.simple).primary .badge {
-  color: orangered;
+  color: #673ab7;
 }
 .btn:not(.simple).gray .badge {
   color: gray;
@@ -1269,7 +1269,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
 .pui-input .bar::after, .pui-input .bar::before {
   content: ' ';
   position: absolute;
-  background-color: orangered;
+  background-color: #673ab7;
   top: -2.75px;
   width: 0;
   height: 2px;
@@ -1295,7 +1295,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transition-property: bottom, color, font-size;
 }
 .pui-input input:focus ~ label.floater {
-  color: orangered;
+  color: #673ab7;
   font-size: 12px;
   bottom: 26px;
 }
@@ -1419,7 +1419,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
 .pui-textarea .bar::after, .pui-textarea .bar::before {
   content: ' ';
   position: absolute;
-  background-color: orangered;
+  background-color: #673ab7;
   top: -6.75px;
   width: 0;
   height: 2px;
@@ -1476,7 +1476,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   top: -1px;
   height: 1rem;
   width: 1rem;
-  background-color: orangered;
+  background-color: #673ab7;
   border-radius: 1000px;
   opacity: 0;
   pointer-events: none;
@@ -1504,7 +1504,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transform: rotate(45deg);
 }
 .pui-check input:checked + label.checkbox .box {
-  border: calc(.5rem + 2px) solid orangered;
+  border: calc(.5rem + 2px) solid #673ab7;
 }
 .pui-check input:checked + label.checkbox .box::after {
   animation: pui-check 0.2s 0.3s cubic-bezier(0.4, 0, 0.23, 1) forwards;
@@ -1592,7 +1592,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transform: scale(0);
   transition: 0.3s cubic-bezier(0.4, 0, 0.23, 1);
   border-radius: 1000px;
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .pui-radio label.radio .ripple {
   background-color: gray;
@@ -1607,7 +1607,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   opacity: 0;
 }
 .pui-radio input:checked + label.radio .circle {
-  border-color: orangered;
+  border-color: #673ab7;
 }
 .pui-radio input:checked + label.radio .circle::after {
   transform: scale(0.575);
@@ -1642,11 +1642,11 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   width: 0;
 }
 .pui-radio input:checked::before {
-  border-color: orangered;
+  border-color: #673ab7;
 }
 .pui-radio input:checked::after {
   transform: scale(0.575);
-  border: calc(.5rem + 1px) solid orangered;
+  border: calc(.5rem + 1px) solid #673ab7;
 }
 .pui-radio input:disabled:after {
   border-color: rgba(0, 0, 0, 0.5);
@@ -1698,14 +1698,14 @@ label.pui-togglebtn .toggle::after {
   transition: all .425s, box-shadow .1s ease;
 }
 label.pui-togglebtn input:checked + .toggle {
-  background-color: rgba(255, 69, 0, 0.5);
+  background-color: rgba(103, 58, 183, 0.5);
 }
 label.pui-togglebtn input:checked + .toggle::after {
-  background-color: orangered;
+  background-color: #673ab7;
   transform: translateX(1.15rem);
 }
 label.pui-togglebtn input:checked:active:not(:disabled) + .toggle::after {
-  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.35), 0 0 0 15px rgba(255, 69, 0, 0.25);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.35), 0 0 0 15px rgba(103, 58, 183, 0.25);
 }
 label.pui-togglebtn input:not(:checked):active:not(:disabled) + .toggle::after {
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.35), 0 0 0 15px rgba(0, 0, 0, 0.25);
@@ -1789,7 +1789,7 @@ label.pui-togglebtn input:checked:disabled::after {
   cursor: pointer;
   border-radius: 100%;
   transition: all 0.3s;
-  background: orangered;
+  background: #673ab7;
   text-align: center;
   position: relative;
   z-index: 4;
@@ -1896,13 +1896,13 @@ label.pui-togglebtn input:checked:disabled::after {
 }
 
 .slider .noUi-connect {
-  background-color: orangered;
+  background-color: #673ab7;
   top: 0;
   bottom: 0;
   position: absolute;
 }
 .slider .noUi-handle {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 
 /*Dropdown menus*/
@@ -1952,11 +1952,11 @@ label.pui-togglebtn input:checked:disabled::after {
 }
 .pui-dropdown ul.pui-dropdown-menu li a:hover, .pui-dropdown ul.pui-dropdown-menu li a:focus {
   background-color: #ededed;
-  color: orangered;
+  color: #673ab7;
 }
 .pui-dropdown ul.pui-dropdown-menu li.active a {
   color: #fff;
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .pui-dropdown ul.pui-dropdown-menu li.active a:hover, .pui-dropdown ul.pui-dropdown-menu li.active a:focus {
   color: #fff;
@@ -2044,7 +2044,7 @@ label.pui-togglebtn input:checked:disabled::after {
   top: -18.5px;
 }
 .card .card-btn.primary {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .card .card-btn.green {
   background-color: #4caf50;
@@ -2080,7 +2080,7 @@ label.pui-togglebtn input:checked:disabled::after {
   padding: 18px;
 }
 .chip.primary {
-  background-color: orangered;
+  background-color: #673ab7;
   color: #fff;
 }
 .chip.blue {
@@ -2268,7 +2268,7 @@ ul.pui-pill {
   margin: 0;
 }
 ul.pui-pill.primary .active {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 ul.pui-pill.blue .active {
   background-color: #03a9f4;
@@ -2351,7 +2351,7 @@ ul.pui-pill li button.active {
   margin: 6px 0;
 }
 .pui-progress.primary {
-  background-color: rgba(255, 69, 0, 0.3);
+  background-color: rgba(103, 58, 183, 0.3);
 }
 .pui-progress.blue {
   background-color: rgba(3, 169, 244, 0.3);
@@ -2375,7 +2375,7 @@ ul.pui-pill li button.active {
   transition: width .5s ease;
 }
 .pui-progress .line.primary {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .pui-progress .line.blue {
   background-color: #03a9f4;
@@ -2399,7 +2399,7 @@ ul.pui-pagination {
   padding: 0;
 }
 ul.pui-pagination.primary li.active > a {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 ul.pui-pagination.gray li.active > a {
   background-color: gray;
@@ -2474,7 +2474,7 @@ ul.pui-pagination li a .ripple-container .waves-ripple {
   box-shadow: 0 3.5px 7px rgba(0, 0, 0, 0.25);
 }
 .pui-notifbox.primary {
-  background-color: orangered;
+  background-color: #673ab7;
 }
 .pui-notifbox.gray {
   background-color: gray;
@@ -2531,7 +2531,7 @@ svg.pui-md-loader g.loader, svg.pui-md-loader g.loader * {
 svg.pui-md-loader g.loader path.path {
   stroke-dasharray: 32.4;
   stroke-dashoffset: 32.4;
-  stroke: orangered;
+  stroke: #673ab7;
 }
 svg.pui-md-loader g.loader path.path:not(.colorful) {
   animation: fillunfill 1333ms forwards infinite running cubic-bezier(0.4, 0, 0.2, 1), rot 5332ms forwards infinite running steps(4);
@@ -2568,7 +2568,7 @@ svg.pui-md-loader g.loader path.path.colorful {
 }
 @keyframes colors {
   from, to {
-    stroke: orangered;
+    stroke: #673ab7;
   }
   20% {
     stroke: #f44336;
