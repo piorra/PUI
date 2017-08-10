@@ -1,4 +1,4 @@
-$('.btn, .pui-tab ul.tab-head li button,ul.pui-nav-tab li button,ul.pui-pagination li a, ul.pui-pill li button, .pui-nav ul.menu li a, .nav-toggle, .card-btn, .pui-alert .content .header .close').append("<div class='ripple-container waves-effect'></div>")
+$('.btn, .pui-tab ul.tab-head li button,ul.pui-nav-tab li button,ul.pui-pagination li a, ul.pui-pill li button, .pui-nav ul.menu li a, .nav-toggle, .card-btn, .pui-alert .content .header .close').append("<div class='ripple-container'></div>")
 $('.pui-check input[type=checkbox]').is(function () {
     t = $(this)
     $(this).after('<label class="checkbox"><span class="box"></span><span class="ripple"></span></label>')
@@ -276,3 +276,31 @@ $('.pui-ftl').is(function () {
     };
     f.prototype.ftl$do_it(s)
 })
+;(function() {
+    const showEvent = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 'touchstart' : 'mousedown';
+    const hideEvent = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 'touchend' : 'mouseup';
+    $(document).on(showEvent, '.ripple-container', function(e){
+    	$ripple = $('<span class="ripple-effect" />'),
+    	$button = $(this),
+    	$offset = $button.offset(),
+    	xPos = ( e.pageX - $offset.left ),
+    	yPos = ( e.pageY - $offset.top ),
+    	$color = $button.parent().data('ripple-color') || void 0,
+    	scaledSize = Math.max( $button.width() , $button.height()) * Math.PI * 1.5;
+    	$ripple.css({
+    		'top': yPos,
+    		'left': xPos,
+    		'background-color': $color
+    	}).appendTo( $button ).animate({
+    		'height': scaledSize,
+    		'width': scaledSize,
+    	}, 700/3*2)
+        $(document).on(hideEvent, $button, function (e) {
+            $ripple.animate({
+                'opacity': 0
+            }, 700/3, function () {
+                $(this).remove()
+            })
+        })
+    })
+}());
