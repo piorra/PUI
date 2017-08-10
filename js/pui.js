@@ -81,6 +81,7 @@ $('[pui-tab-target]').click(function () {
         }
     })
 }());
+
 var _pui = {
     fn: {
         alert: function (o) {
