@@ -1,42 +1,48 @@
-$('.btn, .pui-tab ul.tab-head li button,ul.pui-nav-tab li button,ul.pui-pagination li a, ul.pui-pill li button, .pui-nav ul.menu li a, .nav-toggle, .card-btn, .pui-alert .content .header .close').append("<div class='ripple-container'></div>")
-$('.pui-check input[type=checkbox]').is(function () {
-    t = $(this)
-    $(this).after('<label class="checkbox"><span class="box"></span><span class="ripple"></span></label>')
-    $(this).parent().find('label.checkbox').attr('for', t.attr('id'))
-})
-$('.pui-radio input[type=radio]').is(function () {
-    t = $(this)
-    $(this).after('<label class="radio"><span class="circle"></span><span class="ripple"></span></label>')
-    $(this).parent().find('label.radio').attr('for', t.attr('id'))
-})
-$('.tab-line').is(function () {
-    t = $(this);
-    r = t.parent().find('li').find('button[pui-tab-target].active').parent()
-    w = t.parent().find('li').width()
-    t.css({
-        'left': r.position().left,
-        'width': w
+(function() {
+    //initial works
+    //appending ripple to elements
+    $('.btn, .pui-tab ul.tab-head li button,ul.pui-nav-tab li button,ul.pui-pagination li a, ul.pui-pill li button, .pui-nav ul.menu li a, .nav-toggle, .card-btn, .pui-alert .content .header .close').append("<div class='ripple-container'></div>")
+    //plug-in for Checkboxes
+    $('.pui-check input[type=checkbox]').is(function () {
+        t = $(this)
+        $(this).after('<label class="checkbox"><span class="box"></span><span class="ripple"></span></label>')
+        $(this).parent().find('label.checkbox').attr('for', t.attr('id'))
     })
-})
-$('[pui-tab-target]').click(function () {
-    t = $(this)
-    $( t.parent().parent().find('.active').attr('pui-tab-target') ).removeClass('active')
-    t.parent().parent().find('.active').removeClass('active')
-    //$( t.parent().parent().parent().find('.tab-part.active') ).removeClass('active')
-    t.addClass('active')
-    $( t.attr('pui-tab-target') ).addClass('active');
-    w = t.parent().parent().find('li').width();
-    line = t.parent().parent().find('.tab-line');
-    r = t.parent().parent().find('li').find('button[pui-tab-target].active').parent()
-    line.css({
-        'width': w,
-        'left': r.position().left
+    //plug-in for radio buttons
+    $('.pui-radio input[type=radio]').is(function () {
+        t = $(this)
+        $(this).after('<label class="radio"><span class="circle"></span><span class="ripple"></span></label>')
+        $(this).parent().find('label.radio').attr('for', t.attr('id'))
     })
-})
+    //tab line
+    $('.tab-line').is(function () {
+        t = $(this);
+        r = t.parent().find('li').find('button[pui-tab-target].active').parent()
+        w = t.parent().find('li').width()
+        t.css({
+            'left': r.position().left,
+            'width': w
+        })
+    })
+    //tabs
+    $('[pui-tab-target]').click(function () {
+        t = $(this)
+        $( t.parent().parent().find('.active').attr('pui-tab-target') ).removeClass('active')
+        t.parent().parent().find('.active').removeClass('active')
+        //$( t.parent().parent().parent().find('.tab-part.active') ).removeClass('active')
+        t.addClass('active')
+        $( t.attr('pui-tab-target') ).addClass('active');
+        w = t.parent().parent().find('li').find('button[pui-tab-target].active').parent().width();
+        line = t.parent().parent().find('.tab-line');
+        r = t.parent().parent().find('li').find('button[pui-tab-target].active').parent()
+        line.css({
+            'width': w,
+            'left': r.position().left
+        })
+    })
+}());
 ;(function() {
-    /*$('.pui-dropdown [pui-dropdown-toggler]').click(function () {
-        $(this).parent().toggleClass('active')
-    })*/
+    //dropdowns
     $('.pui-dropdown [pui-dropdown-toggler]').is(function () {
         t = $(this);
         c = {};
@@ -81,7 +87,6 @@ $('[pui-tab-target]').click(function () {
         }
     })
 }());
-
 var _pui = {
     fn: {
         alert: function (o) {
@@ -214,25 +219,7 @@ var _pui = {
         }
     }
 }
-//(function() {
-    /*$('.pui-button-list .handler .btn').click(function () {
-        //alert( $(this).attr('class') )
-        s = $(this);
-        f = {prototype:{}};
-        f.prototype.findTarget = function (el) {
-            return el.parent().parent().find('.list')
-        };
-        f.prototype.classToggle = function (el) {
-            el.click(function () {
-                f.prototype.findTarget(el).toggleClass('list-is-active')
-            })
-        };
-        f.prototype.classToggle(s);
-        //$(this).click(function () {
-        //    $(this).parent().parent().find('.list').toggleClass('active')
-        //})
-    })*/
-//}());
+
 $('.pui-ftl').is(function () {
     var s = $(this);
     var f = {prototype:{}};
@@ -281,17 +268,21 @@ $('.pui-ftl').is(function () {
     const showEvent = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 'touchstart' : 'mousedown';
     const hideEvent = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 'touchend' : 'mouseup';
     $(document).on(showEvent, '.ripple-container', function(e){
+        if (e.button == 2){
+            return false
+        }
     	$ripple = $('<span class="ripple-effect" />'),
     	$button = $(this),
     	$offset = $button.offset(),
-    	xPos = ( e.pageX - $offset.left ),
-    	yPos = ( e.pageY - $offset.top ),
-    	$color = $button.parent().data('ripple-color') || void 0,
+    	xPos = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && 'touches' in e ? ( e.touches[0].pageX - $offset.left ) : (e.pageX - $offset.left),
+    	yPos = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && 'touches' in e ? ( e.touches[0].pageY - $offset.top ) : (e.pageY - $offset.top),
+    	$color = $button.parent().data('ripple-color') || $button.parent().css('color'),
     	scaledSize = Math.max( $button.width() , $button.height()) * Math.PI * 1.5;
     	$ripple.css({
     		'top': yPos,
     		'left': xPos,
-    		'background-color': $color
+    		'background-color': $color,
+            opacity: .05
     	}).appendTo( $button ).animate({
     		'height': scaledSize,
     		'width': scaledSize,
