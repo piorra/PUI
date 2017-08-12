@@ -1204,7 +1204,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   top: -2.75px;
   width: 0;
   height: 2px;
-  transition: width 0.35s cubic-bezier(0, 0, 0, 1);
+  transition: width .35s ease;
 }
 .pui-input .bar::after {
   left: 50%;
@@ -1223,7 +1223,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   font-weight: 300;
   transition: .175s ease;
   pointer-events: none;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   transition-property: bottom, color, font-size;
 }
 .pui-input input:focus ~ label.floater {
@@ -2385,4 +2385,3 @@ svg.pui-md-loader g.loader path.path.colorful {
     stroke: #03a9f4;
   }
 }
-/*Material icons' Font*/
