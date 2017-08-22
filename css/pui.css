@@ -2,7 +2,6 @@
 /*Variables, mixins and functions. colors are imported into this file*/
 /*Core styles*/
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
 html {
   font-size: 16px;
 }
@@ -2432,5 +2431,3 @@ ul.decimal-styled {
   }
 }
 /*Material icons' Font*/
-
-/*# sourceMappingURL=pui.css.map */
