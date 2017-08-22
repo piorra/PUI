@@ -40,13 +40,10 @@ ul.pui-pagination{
     }
     li{
         display: inline-block;
-        float: right;
+        float: left;
         &.active>a{
             box-shadow: 0px 2px 5px t(#000, .25);
             color: #fff;
-            .waves-ripple{
-                background-color: t(#fff, .15) !important
-            }
         }
         a{
             position: relative;
@@ -58,16 +55,6 @@ ul.pui-pagination{
             display: inline-block;
             &.material-icons, .material-icons{
                 @include md-icons(12px);
-            }
-            .ripple-container{
-                position: absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom: 0;
-                .waves-ripple{
-                    background-color: t(#000, .1)
-                }
             }
             margin: 0 3px;
             padding: 0 11px;

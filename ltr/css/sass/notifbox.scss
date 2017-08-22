@@ -26,7 +26,7 @@
     @include y-shadow(3.5, .35);
     .main-icon{
         display: inline-block;
-        float: right;
+        float: left;
         margin-left: .25em;
         &.material-icons, .material-icons{
             @include md-icons(1.25em);
@@ -35,12 +35,12 @@
     }
     .title{
         display: inline;
-        float: right;
+        float: left;
         margin-left: .2em;
         font-weight: bold
     }
     button.close[data-close]{
-        float: left;
+        float: right;
         background: none;
         color: inherit;
         border: none;

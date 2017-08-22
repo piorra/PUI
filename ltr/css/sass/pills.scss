@@ -47,7 +47,7 @@ ul.pui-pill{
     }
     li{
         display: inline-block;
-        float: right;
+        float: left;
         padding: 2px;
         button{
             -webkit-appearance: none;
@@ -67,13 +67,6 @@ ul.pui-pill{
             overflow: hidden;
             border-radius: 2.5px;
             cursor: pointer;
-            .ripple-container{
-                position: absolute;
-                top:0;
-                left:0;
-                right:0;
-                bottom:0;
-            }
             background-color: transparent;
             &:hover, &:focus{
                 background-color: rgba(0,0,0,.08)

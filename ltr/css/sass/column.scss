@@ -21,10 +21,10 @@
     display: block;
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    text-align: right;
     padding-right: 15px;
-    float: right;
+    text-align: left;
+    padding-left: 15px;
+    float: left;
     &.xs-0{
         width: col(0)
     }
@@ -65,43 +65,43 @@
         width: 100%
     }
     &.xs-offset-0{
-        right: col(0)
+        left: col(0)
     }
     &.xs-offset-1{
-        right: col(1)
+        left: col(1)
     }
     &.xs-offset-2{
-        right: col(2)
+        left: col(2)
     }
     &.xs-offset-3{
-        right: col(3)
+        left: col(3)
     }
     &.xs-offset-4{
-        right: col(4)
+        left: col(4)
     }
     &.xs-offset-5{
-        right: col(5)
+        left: col(5)
     }
     &.xs-offset-6{
-        right: 50%
+        left: 50%
     }
     &.xs-offset-7{
-        right: col(7)
+        left: col(7)
     }
     &.xs-offset-8{
-        right: col(8)
+        left: col(8)
     }
     &.xs-offset-9{
-        right: col(9)
+        left: col(9)
     }
     &.xs-offset-10{
-        right: col(10)
+        left: col(10)
     }
     &.xs-offset-11{
-        right: col(11)
+        left: col(11)
     }
     &.xs-offset-12{
-        right: 100%
+        left: 100%
     }
 }
 @media only screen and (min-width: 600px) {
@@ -146,43 +146,43 @@
             width: 100%
         }
         &.sm-offset-0{
-            right: col(0)
+            left: col(0)
         }
         &.sm-offset-1{
-            right: col(1)
+            left: col(1)
         }
         &.sm-offset-2{
-            right: col(2)
+            left: col(2)
         }
         &.sm-offset-3{
-            right: col(3)
+            left: col(3)
         }
         &.sm-offset-4{
-            right: col(4)
+            left: col(4)
         }
         &.sm-offset-5{
-            right: col(5)
+            left: col(5)
         }
         &.sm-offset-6{
-            right: 50%
+            left: 50%
         }
         &.sm-offset-7{
-            right: col(7)
+            left: col(7)
         }
         &.sm-offset-8{
-            right: col(8)
+            left: col(8)
         }
         &.sm-offset-9{
-            right: col(9)
+            left: col(9)
         }
         &.sm-offset-10{
-            right: col(10)
+            left: col(10)
         }
         &.sm-offset-11{
-            right: col(11)
+            left: col(11)
         }
         &.sm-offset-12{
-            right: 100%
+            left: 100%
         }
     }
 }
@@ -228,43 +228,43 @@
             width: 100%
         }
         &.md-offset-0{
-            right: col(0)
+            left: col(0)
         }
         &.md-offset-1{
-            right: col(1)
+            left: col(1)
         }
         &.md-offset-2{
-            right: col(2)
+            left: col(2)
         }
         &.md-offset-3{
-            right: col(3)
+            left: col(3)
         }
         &.md-offset-4{
-            right: col(4)
+            left: col(4)
         }
         &.md-offset-5{
-            right: col(5)
+            left: col(5)
         }
         &.md-offset-6{
-            right: 50%
+            left: 50%
         }
         &.md-offset-7{
-            right: col(7)
+            left: col(7)
         }
         &.md-offset-8{
-            right: col(8)
+            left: col(8)
         }
         &.md-offset-9{
-            right: col(9)
+            left: col(9)
         }
         &.md-offset-10{
-            right: col(10)
+            left: col(10)
         }
         &.md-offset-11{
-            right: col(11)
+            left: col(11)
         }
         &.md-offset-12{
-            right: 100%
+            left: 100%
         }
     }
 }
@@ -310,43 +310,43 @@
             width: 100%
         }
         &.lg-offset-0{
-            right: col(0)
+            left: col(0)
         }
         &.lg-offset-1{
-            right: col(1)
+            left: col(1)
         }
         &.lg-offset-2{
-            right: col(2)
+            left: col(2)
         }
         &.lg-offset-3{
-            right: col(3)
+            left: col(3)
         }
         &.lg-offset-4{
-            right: col(4)
+            left: col(4)
         }
         &.lg-offset-5{
-            right: col(5)
+            left: col(5)
         }
         &.lg-offset-6{
-            right: 50%
+            left: 50%
         }
         &.lg-offset-7{
-            right: col(7)
+            left: col(7)
         }
         &.lg-offset-8{
-            right: col(8)
+            left: col(8)
         }
         &.lg-offset-9{
-            right: col(9)
+            left: col(9)
         }
         &.lg-offset-10{
-            right: col(10)
+            left: col(10)
         }
         &.lg-offset-11{
-            right: col(11)
+            left: col(11)
         }
         &.lg-offset-12{
-            right: 100%
+            left: 100%
         }
     }
 }
