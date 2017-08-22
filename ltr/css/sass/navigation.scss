@@ -62,9 +62,9 @@
     }
     .side{
         display: inline;
-        float: right;
-        margin-left: 15px;
-        margin-right: 5px;
+        float: left;
+        margin-right: 15px;
+        margin-left: 5px;
         margin-top: 5px;
         .nav-toggle{
             font-size: 25px;
@@ -98,16 +98,18 @@
                     position: relative;
                     font-size: 13px;
                     margin: 0 2.5px;
-                    bottom: -4px;
+                    bottom: 1px;
                     &.icon-only{
                         padding: 10px;
                         font-size: 1rem;
+                        .material-icons{
+                            top: -2px;
+                        }
                     }
                     .material-icons{
                         vertical-align: middle;
                         font-size: 1.25em;
                         position: relative;
-                        top: -2px;
                     }
                     .ripple-container{
                         top:0;
@@ -132,7 +134,7 @@
         }
         .collapsible{
             display: inline-block;
-            float: left;
+            float: right;
         }
     }
 
@@ -151,6 +153,10 @@
                     }
                 }
             }
+        }
+        .title{
+            position: relative;
+            bottom: -5px;
         }
     }
 
@@ -181,13 +187,6 @@
                 cursor: pointer;
                 border: none;
                 user-select: none;
-                .ripple-container{
-                    position: absolute;
-                    top:0;
-                    right:0;
-                    left:0;
-                    bottom: 0;
-                }
                 padding: 20px 0;
                 color: #fff;
                 position: relative;

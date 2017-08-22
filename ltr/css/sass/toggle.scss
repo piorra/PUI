@@ -1,24 +1,5 @@
 .pui-check{
     font-size: 1rem !important;
-    @keyframes pui-check-ripple {
-        0%{
-            opacity: .75;
-        }
-        100%{
-            transform: scale3d(3,3,1);
-            opacity: 0
-        }
-    }
-
-    @keyframes pui-check-ripple-off {
-        0%{
-            opacity: .75;
-        }
-        100%{
-            transform: scale3d(3,3,1);
-            opacity: 0
-        }
-    }
     //position: relative;
     margin-top: 5px;
     display: block;
@@ -38,21 +19,8 @@
 
     label.checkbox{
         position: relative;
-        margin-left: 23px;
-        bottom: -3px;
-        .ripple{
-            position: absolute;
-            content: ' ';
-            right:2px;
-            top:-1px;
-            height: 1rem;
-            width: 1rem;
-            background-color: $toggle-bg;
-            border-radius: 1000px;
-            opacity: 0;
-            pointer-events: none;
-        }
-
+        margin-right: 23px;
+        bottom: -.5px;
         .box{
             position: absolute;
             content: ' ';
@@ -64,7 +32,7 @@
             color: inherit;
             cursor: pointer;
             border-radius: 12.5%;
-            right:0;
+            left:0;
             &::after{
                 position: absolute;
                 visibility: visible;
@@ -76,6 +44,7 @@
                 border-bottom: 2px solid transparent;
                 transform-origin: 0% 100%;
                 transform: rotate(45deg);
+                left:-6px
             }
         }
     }
@@ -106,14 +75,6 @@
                 opacity: .75
             }
         }
-        .ripple{
-            display: none !important
-        }
-    }
-
-    input:not(:checked) + .checkbox .ripple{
-        animation: pui-check-ripple-off 500ms cubic-bezier(0,0,0,1);
-        background-color: gray
     }
 
     input{
@@ -155,8 +116,8 @@
     }
     label.radio{
         position: relative;
-        margin-left: 23px;
-        bottom:-6px;
+        margin-right: 23px;
+        bottom:-1px;
         .circle{
             content: ' ';
             visibility: visible;
@@ -167,7 +128,7 @@
             position: absolute;
             transition: .3s;
             cursor: pointer;
-            right:0;
+            left:0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -192,8 +153,8 @@
             transform: scale(2.5);
             width: 1rem;
             position: absolute;
-            top: -1.75px;
-            right: 1px;
+            top: 1px;
+            right: -17px;
             border-radius: 100%;
             pointer-events: none;
             opacity: 0;
