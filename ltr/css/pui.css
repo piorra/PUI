@@ -2373,4 +2373,35 @@ ul.decimal-styled {
     display: none;
   }
 }
+table.pui-table {
+  width: 100%;
+}
+table.pui-table, table.pui-table * {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table.pui-table tr {
+  padding: 2.5px 0;
+}
+table.pui-table thead {
+  font-weight: bold;
+  border-bottom: 2px solid #555;
+}
+table.pui-table td, table.pui-table th {
+  padding: 0 3px;
+}
+table.pui-table tbody tr {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+}
+table.pui-table tbody tr:last-child {
+  border-bottom: none !important;
+}
+table.pui-table.row-hover tr {
+  transition: .3s ease;
+}
+table.pui-table.row-hover tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 /*Material icons' Font*/
