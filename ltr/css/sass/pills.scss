@@ -72,7 +72,7 @@ ul.pui-pill{
                 background-color: rgba(0,0,0,.08)
             }
             &.active{
-                color: #fff;
+                color: white;
                 @include y-shadow(8, .525)
             }
         }
