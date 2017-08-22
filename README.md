@@ -1,5 +1,8 @@
 # PUI
 A fully responsive web design framework, Based on material design.
 <h5>Directions</h5>
-Currently, PUI is available in <b>rtl</b> direction.
-We are working on a <b>ltr</b> one, that you can find it in this repository.
+PUI is available in both ltr and rtl versions, that you can find them on this repo.
+<h5>Documentation</h5>
+After release ```v1.0.0
+
+```, we will make a documentation in the both English and Persian languages.
