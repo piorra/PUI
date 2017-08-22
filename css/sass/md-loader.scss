@@ -7,7 +7,7 @@ svg.pui-md-loader{
         path.path{
             stroke-dasharray: 32.4;
             stroke-dashoffset: 32.4;
-            stroke: $primary;
+            stroke: $loader-stroke-color;
             &:not(.colorful){
                 animation: fillunfill 1333ms forwards infinite running cubic-bezier(.4, 0, .2, 1), rot 5332ms forwards infinite running steps(4)
             }
@@ -49,7 +49,7 @@ svg.pui-md-loader{
 
     @keyframes colors {
         from, to{
-            stroke: $primary
+            stroke: $loader-stroke-color
         }
         20%{
             stroke: $red

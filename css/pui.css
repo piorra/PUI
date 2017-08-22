@@ -609,16 +609,16 @@ optgroup {
   color: #fff;
 }
 .btn.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 .btn.primary.simple {
-  color: #03a9f4;
+  color: #607d8b;
 }
 .btn.secondary {
-  background-color: #f4511e;
+  background-color: #ffc107;
 }
 .btn.secondary.simple {
-  color: #f4511e;
+  color: #ffc107;
 }
 .btn.gray {
   background-color: gray;
@@ -678,7 +678,7 @@ optgroup {
 }
 
 .primary-txt {
-  color: #03a9f4 !important;
+  color: #607d8b !important;
 }
 
 .black-txt {
@@ -818,7 +818,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 .pui-tab.primary ul.tab-head {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 .pui-tab.blue ul.tab-head {
   background-color: #2196f3;
@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: inherit !important;
 }
 .pui-nav.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
   box-shadow: 0 6px 15px -3px rgba(0, 0, 0, 0.6);
 }
 .pui-nav.primary .side .nav-toggle {
@@ -1040,7 +1040,7 @@ label.lbl {
   font-weight: bold;
 }
 label.lbl.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 label.lbl.gray {
   background-color: gray;
@@ -1067,7 +1067,7 @@ label.lbl.red {
 
 a.pui-link {
   position: relative;
-  color: #03a9f4;
+  color: #607d8b;
 }
 a.pui-link.no-line::after {
   content: none;
@@ -1134,7 +1134,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   background-color: #fff;
 }
 .btn:not(.simple).primary .badge {
-  color: #03a9f4;
+  color: #607d8b;
 }
 .btn:not(.simple).gray .badge {
   color: gray;
@@ -1196,7 +1196,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
 .pui-input .bar::after, .pui-input .bar::before {
   content: ' ';
   position: absolute;
-  background-color: #f4511e;
+  background-color: #ffc107;
   top: -2.75px;
   width: 0;
   height: 2px;
@@ -1223,7 +1223,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transition-property: bottom, color, font-size;
 }
 .pui-input input:focus ~ label.floater {
-  color: #f4511e;
+  color: #ffc107;
   font-size: 12px;
   bottom: 25px;
 }
@@ -1351,7 +1351,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
 .pui-textarea .bar::after, .pui-textarea .bar::before {
   content: ' ';
   position: absolute;
-  background-color: #f4511e;
+  background-color: #ffc107;
   top: -6.75px;
   width: 0;
   height: 2px;
@@ -1416,7 +1416,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   top: -1px;
   height: 1rem;
   width: 1rem;
-  background-color: #f4511e;
+  background-color: #ffc107;
   border-radius: 1000px;
   opacity: 0;
   pointer-events: none;
@@ -1450,7 +1450,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transform: scale3d(0.75, 0.75, 1);
 }
 .pui-check input:checked + label.checkbox .box {
-  border: calc(.5rem + 2px) solid #f4511e;
+  border: calc(.5rem + 2px) solid #ffc107;
 }
 .pui-check input:checked + label.checkbox .box::after {
   animation: pui-check 0.2s 0.32s cubic-bezier(0.4, 0, 0.23, 1) forwards;
@@ -1538,7 +1538,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   transform: scale(1);
   transition: 0.3s cubic-bezier(0.4, 0, 0.23, 1);
   border-radius: 1000px;
-  border: 0px solid #f4511e;
+  border: 0px solid #ffc107;
 }
 .pui-radio label.radio .ripple {
   background-color: gray;
@@ -1553,7 +1553,7 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   opacity: 0;
 }
 .pui-radio input:checked + label.radio .circle {
-  border-color: #f4511e;
+  border-color: #ffc107;
 }
 .pui-radio input:checked + label.radio .circle::after {
   transform: scale(0.575);
@@ -1589,11 +1589,11 @@ a.pui-link:hover::after, a.pui-link:focus::after {
   width: 0;
 }
 .pui-radio input:checked::before {
-  border-color: #f4511e;
+  border-color: #ffc107;
 }
 .pui-radio input:checked::after {
   transform: scale(0.575);
-  border: calc(.5rem + 1px) solid #f4511e;
+  border: calc(.5rem + 1px) solid #ffc107;
 }
 .pui-radio input:disabled:after {
   border-color: rgba(0, 0, 0, 0.5);
@@ -1645,14 +1645,14 @@ label.pui-togglebtn .toggle::after {
   transition: all .425s, box-shadow .1s ease;
 }
 label.pui-togglebtn input:checked + .toggle {
-  background-color: rgba(244, 81, 30, 0.4);
+  background-color: rgba(255, 193, 7, 0.4);
 }
 label.pui-togglebtn input:checked + .toggle::after {
-  background-color: #f4511e;
+  background-color: #ffc107;
   transform: translateX(1.15rem);
 }
 label.pui-togglebtn input:checked:active:not(:disabled) + .toggle::after {
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5), 0 0 0 15px rgba(244, 81, 30, 0.25);
+  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5), 0 0 0 15px rgba(255, 193, 7, 0.25);
 }
 label.pui-togglebtn input:not(:checked):active:not(:disabled) + .toggle::after {
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.5), 0 0 0 15px rgba(0, 0, 0, 0.25);
@@ -1736,7 +1736,7 @@ label.pui-togglebtn input:checked:disabled + .toggle::after {
   cursor: pointer;
   border-radius: 100%;
   transition: all 0.3s;
-  background: #03a9f4;
+  background: #607d8b;
   text-align: center;
   position: relative;
   z-index: 4;
@@ -1843,13 +1843,13 @@ label.pui-togglebtn input:checked:disabled + .toggle::after {
 }
 
 .slider .noUi-connect {
-  background-color: #03a9f4;
+  background-color: #607d8b;
   top: 0;
   bottom: 0;
   position: absolute;
 }
 .slider .noUi-handle {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 
 /*Cards*/
@@ -1897,7 +1897,7 @@ label.pui-togglebtn input:checked:disabled + .toggle::after {
   padding: 18px;
 }
 .chip.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
   color: #fff;
 }
 .chip.blue {
@@ -2085,7 +2085,7 @@ ul.pui-pill {
   margin: 0;
 }
 ul.pui-pill.primary .active {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 ul.pui-pill.blue .active {
   background-color: #2196f3;
@@ -2162,7 +2162,7 @@ ul.pui-pill li button.active {
   margin: 6px 0;
 }
 .pui-progress.primary {
-  background-color: rgba(3, 169, 244, 0.3);
+  background-color: rgba(96, 125, 139, 0.3);
 }
 .pui-progress.blue {
   background-color: rgba(33, 150, 243, 0.3);
@@ -2186,7 +2186,7 @@ ul.pui-pill li button.active {
   transition: width .5s ease;
 }
 .pui-progress .line.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 .pui-progress .line.blue {
   background-color: #2196f3;
@@ -2210,7 +2210,7 @@ ul.pui-pagination {
   padding: 0;
 }
 ul.pui-pagination.primary li.active > a {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 ul.pui-pagination.gray li.active > a {
   background-color: gray;
@@ -2285,7 +2285,7 @@ ul.pui-pagination li a .ripple-container .waves-ripple {
   box-shadow: 0 3.5px 8.75px -1.75px rgba(0, 0, 0, 0.35);
 }
 .pui-notifbox.primary {
-  background-color: #03a9f4;
+  background-color: #607d8b;
 }
 .pui-notifbox.gray {
   background-color: gray;
@@ -2342,7 +2342,7 @@ svg.pui-md-loader g.loader, svg.pui-md-loader g.loader * {
 svg.pui-md-loader g.loader path.path {
   stroke-dasharray: 32.4;
   stroke-dashoffset: 32.4;
-  stroke: #03a9f4;
+  stroke: #607d8b;
 }
 svg.pui-md-loader g.loader path.path:not(.colorful) {
   animation: fillunfill 1333ms forwards infinite running cubic-bezier(0.4, 0, 0.2, 1), rot 5332ms forwards infinite running steps(4);
@@ -2379,7 +2379,7 @@ svg.pui-md-loader g.loader path.path.colorful {
 }
 @keyframes colors {
   from, to {
-    stroke: #03a9f4;
+    stroke: #607d8b;
   }
   20% {
     stroke: #f44336;
