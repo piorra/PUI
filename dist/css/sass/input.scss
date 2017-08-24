@@ -1,9 +1,6 @@
 .pui-input{
     margin-top: 35px;
     margin-bottom: 15px;
-    &.inline{
-        display: inline-block;
-    }
     input{
         width: 100%;
         border: none;
@@ -61,7 +58,7 @@
         font-weight: 300;
         transition: .175s ease;
         pointer-events: none;
-        margin-bottom: 3px;
+        margin-bottom: 5px;
         transition-property: bottom, color, font-size;
     }
 

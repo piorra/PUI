@@ -11,7 +11,7 @@
     //font-weight: bold;
     &:not(.material-icons){
         font-weight: bold;
-	  }
+	}
     .material-icons{
         font-weight: normal !important;
     }
@@ -93,6 +93,10 @@
     &.simple{
         background-color: transparent !important;
     }
+    .fab .material-icons{
+        line-height: inherit;
+        font-size: inherit
+    }
     &:not(.simple){
         color: #fff;
         @include y-shadow(2, .2);
@@ -153,7 +157,7 @@
         position: fixed;
         z-index: 3000;
         bottom: -100px;
-        left: 25px;
+        right: 25px;
         &.ftl-is-active{
             bottom: 25px
         }

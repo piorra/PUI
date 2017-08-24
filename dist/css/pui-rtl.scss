@@ -1,0 +1,300 @@
+*{
+    direction: rtl !important;
+}
+
+.pui-col{
+    text-align: right !important;
+    float: right !important;
+    &[class^=xs-offset]{
+        left: auto !important
+    }
+    &.xs-offset-0{
+        right: col(0)
+    }
+    &.xs-offset-1{
+        right: col(1)
+    }
+    &.xs-offset-2{
+        right: col(2)
+    }
+    &.xs-offset-3{
+        right: col(3)
+    }
+    &.xs-offset-4{
+        right: col(4)
+    }
+    &.xs-offset-5{
+        right: col(5)
+    }
+    &.xs-offset-6{
+        right: 50%
+    }
+    &.xs-offset-7{
+        right: col(7)
+    }
+    &.xs-offset-8{
+        right: col(8)
+    }
+    &.xs-offset-9{
+        right: col(9)
+    }
+    &.xs-offset-10{
+        right: col(10)
+    }
+    &.xs-offset-11{
+        right: col(11)
+    }
+    &.xs-offset-12{
+        right: 100%
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .pui-col{
+        &[class^=sm-offset-]{
+            left: auto !important
+        }
+        &.sm-offset-0{
+            right: col(0)
+        }
+        &.sm-offset-1{
+            right: col(1)
+        }
+        &.sm-offset-2{
+            right: col(2)
+        }
+        &.sm-offset-3{
+            right: col(3)
+        }
+        &.sm-offset-4{
+            right: col(4)
+        }
+        &.sm-offset-5{
+            right: col(5)
+        }
+        &.sm-offset-6{
+            right: 50%
+        }
+        &.sm-offset-7{
+            right: col(7)
+        }
+        &.sm-offset-8{
+            right: col(8)
+        }
+        &.sm-offset-9{
+            right: col(9)
+        }
+        &.sm-offset-10{
+            right: col(10)
+        }
+        &.sm-offset-11{
+            right: col(11)
+        }
+        &.sm-offset-12{
+            right: 100%
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .pui-col{
+        &[class^=md-offset-]{
+            left: auto !important
+        }
+        &.md-offset-0{
+            right: col(0)
+        }
+        &.md-offset-1{
+            right: col(1)
+        }
+        &.md-offset-2{
+            right: col(2)
+        }
+        &.md-offset-3{
+            right: col(3)
+        }
+        &.md-offset-4{
+            right: col(4)
+        }
+        &.md-offset-5{
+            right: col(5)
+        }
+        &.md-offset-6{
+            right: 50%
+        }
+        &.md-offset-7{
+            right: col(7)
+        }
+        &.md-offset-8{
+            right: col(8)
+        }
+        &.md-offset-9{
+            right: col(9)
+        }
+        &.md-offset-10{
+            right: col(10)
+        }
+        &.md-offset-11{
+            right: col(11)
+        }
+        &.md-offset-12{
+            right: 100%
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .pui-col{
+        &[class^=lg-offset-]{
+            left: auto !important;
+        }
+        &.lg-offset-0{
+            right: col(0)
+        }
+        &.lg-offset-1{
+            right: col(1)
+        }
+        &.lg-offset-2{
+            right: col(2)
+        }
+        &.lg-offset-3{
+            right: col(3)
+        }
+        &.lg-offset-4{
+            right: col(4)
+        }
+        &.lg-offset-5{
+            right: col(5)
+        }
+        &.lg-offset-6{
+            right: 50%
+        }
+        &.lg-offset-7{
+            right: col(7)
+        }
+        &.lg-offset-8{
+            right: col(8)
+        }
+        &.lg-offset-9{
+            right: col(9)
+        }
+        &.lg-offset-10{
+            right: col(10)
+        }
+        &.lg-offset-11{
+            right: col(11)
+        }
+        &.lg-offset-12{
+            right: 100%
+        }
+    }
+}
+
+.pui-input{
+    label.floater{
+        margin-bottom: 3px !important
+    }
+}
+
+.pui-check{
+    label.checkbox{
+        top: 3px !important;
+        margin-right: 0 !important;
+        margin-left: 23px;
+        .box{
+            left: auto !important;
+            right:0
+        }
+    }
+}
+
+.pui-radio{
+    label.radio{
+        bottom: -3px;
+        margin-right: auto !important;
+        margin-left: 23px;
+        .circle{
+            left:auto !important;
+            right: 0
+        }
+        .ripple{
+            top: -2px !important;
+            right: 1px !important
+        }
+    }
+}
+
+.pui-togglebtn{
+    .toggle{
+        margin-right: auto !important;
+        margin-left: 10px;
+    }
+}
+
+ul.pui-pagination{
+    li{
+        float: right
+    }
+}
+
+ul.pui-pill{
+    li{
+        float: right;
+    }
+}
+
+.pui-nav{
+    .side{
+        float: right;
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+    .collapsible ul.menu li a{
+        top:5px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pui-nav{
+        .title{
+            top: 0
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .pui-nav{
+        .collapsible{
+            float: left;
+        }
+    }
+}
+
+.pui-notifbox{
+    .main-icon{
+        float: right !important;
+        margin-right: .25em;
+        margin-left: 0 !important
+    }
+    .title{
+        float: right!important;
+        margin-right: .2em;
+        margin-left: .2em
+    }
+    button.close[data-close]{
+        float: left !important;
+    }
+}
+
+.btn.pui-ftl{
+    right: auto;
+    left: 25px;
+}
+
+.pui-alert{
+    .content .header .close{
+        float: left !important;
+    }
+}
+
+.card footer{
+    text-align: left !important;
+}
