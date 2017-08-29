@@ -57,31 +57,11 @@ label.lbl{
     }
 }
 
-a.pui-link{
+a.link{
     position: relative;
     color: $primary;
-    &.no-line{
-        &::after{
-            content: none;
-            display: none;
-        }
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        bottom: calc(-.2em - 2px);
-        height: 1.5px;
-        background-color: currentColor;
-        right:0;
-        left:0;
-        transition: 300ms;
-        transform: scaleX(0);
-        pointer-events: none;
-    }
     &:hover, &:focus{
-        &::after{
-            transform: scaleX(1);
-        }
+        color: darken($primary, 30%);
     }
 }
 
@@ -112,21 +92,20 @@ a.pui-link{
 }
 
 .badge{
-    font-size: 50%;
+    font-size: .65em;
     background-color: red;
     height: 2em;
     vertical-align: middle;
-    min-width: 2em;
+    text-align: center;
+    padding: 0 1em;
     line-height: 2em;
     color: #fff;
     border-radius: 1000px;
     display: inline-block;
     @include no-select;
     &.raised{
-        box-shadow: 0 .25em .47em -1px rgba(0,0,0,.35)
-    }
-    &.float-left{
-        float: left !important;
+        //box-shadow: 0 .5em 1.7125em -.3425em rgba(0,0,0,0.5)
+        @include y-shadow(6.85, .45);
     }
 }
 
