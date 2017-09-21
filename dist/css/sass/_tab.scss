@@ -42,7 +42,7 @@
     }
     .tab-body{
         padding: 25px;
-        background-color: #fff;
+        background-color: $raised-area-bg;
         overflow: auto;
         .tab-part{
             display: none;
@@ -51,30 +51,8 @@
             }
         }
     }
-    &.primary{
-        ul.tab-head{
-            background-color: $primary
-        }
-    }
-    &.blue{
-        ul.tab-head{
-            background-color: $blue
-        }
-    }
-    &.green{
-        ul.tab-head{
-            background-color: $green
-        }
-    }
-    &.yellow{
-        ul.tab-head{
-            background-color: $yellow
-        }
-    }
-    &.red{
-        ul.tab-head{
-            background-color: $red
-        }
+    ul.tab-head{
+        background-color: $primary
     }
 }
 

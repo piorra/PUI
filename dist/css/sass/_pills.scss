@@ -27,6 +27,12 @@ ul.pui-pill{
             background-color: $red;
         }
     }
+	&.secondary{
+        .active{
+            background-color: $secondary;
+        }
+    }
+	
     &.justified{
         li{
             @include equal-width;

@@ -1,9 +1,9 @@
 .card{
-    box-shadow: 0px 5px 10px -2.5px rgba(0,0,0,.5);
+    @include y-shadow(2, .45);
     border-radius: 2.5px;
     overflow: hidden;
     margin: 5px 0px;
-    background-color: #fff;
+    background-color: $raised-area-bg;
     .head{
         width: 100%;
     }
@@ -17,9 +17,9 @@
         font-size: 80%;
     }
     &.hover-effect{
-        transition: .55s;
+        transition: box-shadow .3s ease;
         &.--is-hovered{
-            box-shadow: 0 8px 22px 3px rgba(0,0,0,.5);
+            @include y-shadow(8, .55);
         }
     }
 }

@@ -4,15 +4,12 @@ table.pui-table{
         border-collapse: collapse;
     }
     width:100%;
-    tr{
-        padding: 2.5px 0
-    }
     thead{
         font-weight: bold;
         border-bottom: 2px solid #555
     }
     td, th{
-        padding: 0 3px
+        padding: 5px 0
     }
     tbody{
         tr{
@@ -21,6 +18,11 @@ table.pui-table{
             &:last-child{
                 border-bottom: none !important
             }
+        }
+    }
+    &.striped{
+        tr:not( thead > tr ):nth-child(odd){
+            background-color: rgba(#000, 0.035)
         }
     }
     &.row-hover{
