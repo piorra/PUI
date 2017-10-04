@@ -1,5 +1,4 @@
 .pui-tooltip{
-    $main_color:$raised-area-bg;
     position: absolute;
     z-index: 100;
     opacity: 0;
@@ -10,11 +9,11 @@
 		transition-property: opacity, transform;
 	}
     & > .inner{
-        border-radius: 2.5px;
+        border-radius: $basic-border-radius;
         padding: 7px 35px;
         font-size: 13px;
-        background-color: $main_color;
-        color: $body-color;
+        background-color: $popup-bg;
+        color: $popup-text-color;
         white-space: nowrap;
         overflow: hidden;
         max-width: 400px;
@@ -35,7 +34,7 @@
             top: 100%;
             left: calc(50% - 6px);
             border: {
-                top: 6px solid $main_color;
+                top: 6px solid $popup-bg;
                 right: 6px solid transparent;
                 left: 6px solid transparent;
             }
@@ -46,7 +45,7 @@
             bottom: 100%;
             left: calc(50% - 6px);
             border: {
-                bottom: 6px solid $main_color;
+                bottom: 6px solid $popup-bg;
                 right: 6px solid transparent;
                 left: 6px solid transparent;
             }
@@ -58,7 +57,7 @@
             right: 100%;
             border: {
                 bottom: 6px solid transparent;
-                right: 6px solid $main_color;
+                right: 6px solid $popup-bg;
                 top: 6px solid transparent
             }
         }
@@ -69,7 +68,7 @@
             left: 100%;
             border: {
                 bottom: 6px solid transparent;
-                left: 6px solid $main_color;
+                left: 6px solid $popup-bg;
                 top: 6px solid transparent
             }
         }
@@ -96,16 +95,15 @@
 }
 
 .pui-popover{
-    $main_color:$raised-area-bg;
     position: absolute;
     z-index: 100;
 	opacity: 0;
     & > .inner{
-        border-radius: 2.5px;
+        border-radius: $basic-border-radius;
         padding: 8px 33px;
         font-size: 15px;
-        background-color: $main_color;
-        color: $body-color;
+        background-color: $popup-bg;
+        color: $popup-text-color;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -144,7 +142,7 @@
             top: 100%;
             left: calc(50% - 8px);
             border: {
-                top: 8px solid $main_color;
+                top: 8px solid $popup-bg;
                 right: 8px solid transparent;
                 left: 8px solid transparent;
             }
@@ -155,7 +153,7 @@
             bottom: 100%;
             left: calc(50% - 8px);
             border: {
-                bottom: 8px solid $main_color;
+                bottom: 8px solid $popup-bg;
                 right: 8px solid transparent;
                 left: 8px solid transparent;
             }
@@ -167,7 +165,7 @@
             right: 100%;
             border: {
                 bottom: 8px solid transparent;
-                right: 8px solid $main_color;
+                right: 8px solid $popup-bg;
                 top: 8px solid transparent
             }
         }
@@ -178,7 +176,7 @@
             left: 100%;
             border: {
                 bottom: 8px solid transparent;
-                left: 8px solid $main_color;
+                left: 8px solid $popup-bg;
                 top: 8px solid transparent
             }
         }

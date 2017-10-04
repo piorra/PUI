@@ -1,73 +1,21 @@
-@import "colors";
-$primary: $indigo;
-$secondary: $pink-400;
-$gray: $blue-grey;
-//---------------------
-$navbar-bg: #fff;
-$input-color: $secondary;
-$toggle-bg: $secondary;
-$toggle-off-bg: #999;
-$toggle-disabled-bg: #cbcbcb;
-$input-underline-color: $toggle-off-bg;
-$loader-stroke-color: $secondary;
-$body-bg: #f1f1f1;
-$body-color: #212121;
-$raised-area-bg: #fff;
-//---------------------
-@function col($i) {
-    @return $i*100%/12;
-}
-
-@function color_rel-to_l($alt-color, $true-color, $target-color, $function-limit: 65) {
-    @if lightness($target-color) < $function-limit {
-        @return $true-color;
-    } @else {
-        @return $alt-color;
-    }
-}
-
-@function color-combine( $f, $s ) {
-    $red: red($f) + red($s);
-    $green: green($f) + green($s);
-    $blue: blue($f) + blue($s);
-    @return rgb($red, $green, $blue);
-}
-
-//Adding alpha to colors;
-@function t($c, $r) {
-    $i: 1 - $r;
-    @return transparentize($c, $i);
-}
-
-//Creating shadows
-
-@mixin y-shadow($depth, $alpha: 0.5) {
-    $y_offset: #{ $depth}px;
-    $blur: #{ $depth * 2 + $depth / 2}px;
-    $spread: #{-$depth/2}px;
-    box-shadow: 0 $y_offset $blur $spread t(#000, $alpha);
-}
-//Select-blocking elements
-@mixin no-select {
-    user-select: none;
-}
-//Clearfixing
-@mixin clearfixing {
-    &::after, &::before{
-        content: '';
-        clear: both;
-        display: table
-    }
-}
-//Equal width!
-@mixin equal-width {
-    display: table-cell;
-    width: 0.01%;
-}
-
-//material icons Fixing
-@mixin md-icons($f) {
-    vertical-align: middle;
-    font-size: $f !important;
-    line-height: inherit;
-}
+@import "data/_colors";
+@import "data/_functions";
+//The Head variables: primary and secondary.
+//lime-A700, green-800, inputs: light-green-A700 ||//\\||
+$primary: $blue-400 !default;
+$secondary: $deep-orange-A700 !default;
+//Setting up our database:
+$navbar-bg: $primary !default;
+$input-color: $secondary !default;
+$toggle-bg: $input-color !default;
+$toggle-off-bg: #999 !default;
+$toggle-disabled-bg: #cbcbcb !default;
+$input-underline-color: $toggle-off-bg !default;
+$loader-stroke-color: $secondary !default;
+$body-bg: #f1f1f1 !default;
+$body-color: #333 !default;
+$raised-area-bg: #fff !default;
+$popup-bg: $raised-area-bg !default;
+$popup-text-color: $body-color !default;
+$grid-system-number: 12 !default;
+$basic-border-radius: 2.5px !default;

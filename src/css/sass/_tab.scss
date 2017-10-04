@@ -1,5 +1,5 @@
 .pui-tab{
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     overflow: hidden;
     margin: 10px auto;
     @include y-shadow(2, .5);
@@ -27,15 +27,12 @@
                 border: none;
                 user-select: none;
                 font-size: 85%;
-                .ripple-container{
-                    position: absolute;
-                    top:0;
-                    right:0;
-                    left:0;
-                    bottom: 0;
-                }
-                padding: 20px 12.5px;
+                padding: 20px 0;
                 color: #fff;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100%;
                 position: relative;
             }
         }
@@ -51,8 +48,15 @@
             }
         }
     }
-    ul.tab-head{
-        background-color: $primary
+    &, &.primary{
+        & > ul.tab-head{
+            background-color: $primary
+        }
+    }
+    &.secondary{
+        & > ul.tab-head{
+            background-color: $secondary
+        }
     }
 }
 

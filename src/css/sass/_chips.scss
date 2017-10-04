@@ -2,7 +2,7 @@
     padding: 15px;
     font-size: 1em;
     @include y-shadow(2, .45);
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     margin: 10px 5px;
     background-color: $raised-area-bg;
     &.sm{

@@ -18,7 +18,7 @@
         width: 500px;
         transition: inherit;
         background-color: #fff;
-        border-radius: 2.5px;
+        border-radius: $basic-border-radius;
         overflow:hidden;
         transform: translateY(-25%);
         box-shadow: 0 8px 15px 4px rgba(0,0,0,.35);
@@ -66,7 +66,7 @@
         footer{
             text-align: right;
             button.btn{
-                margin: 0 2.5px;
+                margin: 0 $basic-border-radius;
             }
             padding: 7px 10px;
         }

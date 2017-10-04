@@ -6,7 +6,7 @@
         background-color: $primary
     }
     &.gray{
-      background-color: $gray
+      background-color: gray
     }
     &.blue{
         background-color: $blue;
@@ -25,7 +25,7 @@
     }
     margin: 5px 7.5px;
     color: #fff;
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     @include y-shadow(3.5, .35);
     .main-icon{
         display: inline-block;

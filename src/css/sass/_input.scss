@@ -85,7 +85,7 @@
 
 .pui-raised-input{
     @include y-shadow(3, .4);
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     padding: 8px 20px;
     cursor: text;
     input{
@@ -98,7 +98,7 @@
     &.sm{
         input{
             font-size: .675rem;
-            padding-bottom: 2.5px;
+            padding-bottom: $basic-border-radius;
         }
         padding: 4px 10px;
     }

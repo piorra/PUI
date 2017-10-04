@@ -18,41 +18,121 @@
         align-items: center;
         justify-content: flex-start;
         .box{
-            position: absolute;
             height: 16px;
             width: 16px;
             border: 2px solid $toggle-off-bg;
-			transition: .25s ease;
-            visibility: visible;
+            transition: .175s ease;
             color: inherit;
             cursor: pointer;
             border-radius: 12.5%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after{
+                display: block;
+                content: '';
+                height: 70%;
+                width: 35%;
+                left: -4px;
+                position: relative;
+                border: {
+                    right: 2px solid #fff;
+                    bottom: 2px solid #fff;
+                }
+                transform: rotate(45deg) scale(0,0);
+                box-sizing: content-box;
+                transform-origin: 100% 100%
+            }
+        }
+        .check-ripple{
+            display: block;
+            height: 4px;
+            width: 4px;
+            position: absolute;
+            background-color: rgba(#000, .5);
+            border-radius: 50%;
+            opacity: 0;
+            // transform: scale(10);
+//            z-index: 2;
+            // transition: .15s ease-out;
+			pointer-events: none;
         }
     }
-
-    input:checked + label.checkbox{
-        .box{
-            border-color: $toggle-bg;
-			transform: rotate(-45deg) translate(25%, -25%);
-			border-top: none;
-			border-right: none;
-			border-radius: 0;
-			height: 8px;
+    input[type=checkbox]{
+        & + label.checkbox .box.pressed{
+            .check-ripple{
+                // transform: scale(10);
+                // opacity: .6
+            }
         }
-    }
-
-    input:disabled + label.checkbox{
-        .box{
-            border-color: $toggle-disabled-bg;
-            cursor: default;
+        // & + label.checkbox .box:not(.pressed){
+        //     .check-ripple{
+                // animation: check-ripple-hide .15s ease-in forwards;
+        //     }
+        // }
+        &:enabled:checked + label.checkbox{
+            .box{
+                border-color: $toggle-bg;
+                background-color: $toggle-bg;
+                &::after{
+                    animation: checkmark-expand .175s ease-out forwards running;
+                }
+                .check-ripple{
+                    background-color: $toggle-bg;
+                    animation: check-ripple-show .3s ease-out forwards;
+                }
+            }
         }
-    }
-
-    input{
+        &:enabled:not(:checked) + label.checkbox{
+            .box{
+                .check-ripple{
+                    // animation: check-ripple-show .3s ease-out forwards;
+                }
+            }
+        }
+        &:disabled + label.checkbox{
+            .box{
+                border-color: $toggle-disabled-bg;
+                cursor: default;
+            }
+        }
+        &:disabled:checked + label.checkbox .box{
+            background-color: $toggle-disabled-bg;
+            &::after{
+                transform: rotate(45deg) scale(1,1);
+            }
+        }
         height: 0;
         width:0;
-        visibility: hidden;
+        // visibility: hidden;
     }
+    @keyframes checkmark-expand{
+        to{
+            transform: rotate(45deg) scale(1,1);
+        }
+    }
+
+    @keyframes check-ripple-show{
+        0%{
+            opacity: .4;
+        }
+        60%{
+            transform: scale(10);
+            opacity: .4
+        }
+        to{
+            opacity: 0;
+            transform: scale(10);
+        }
+    }
+
+    // @keyframes check-ripple-hide {
+    //     to{
+    //         opacity: 0;
+    //     }
+    // }
+
     @keyframes pui-check {
         0% {
             width: 0;
@@ -130,14 +210,14 @@
                 border-width: 8px;
             }
         }
-	}
-	input{
-		&:active:enabled{
-			& + label.radio .circle{
-				transform: scale3d(.75,.75,1)
-			}
-		}
-	}
+    }
+    input{
+        &:active:enabled{
+            & + label.radio .circle{
+                transform: scale3d(.75,.75,1)
+            }
+        }
+    }
     input:disabled + label.radio{
         .circle{
             border-color: $toggle-disabled-bg;

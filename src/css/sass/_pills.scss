@@ -71,7 +71,7 @@ ul.pui-pill{
             transition: all .4s ease;
             font-size: 12px;
             overflow: hidden;
-            border-radius: 2.5px;
+            border-radius: $basic-border-radius;
             cursor: pointer;
             background-color: transparent;
             &:hover, &:focus{

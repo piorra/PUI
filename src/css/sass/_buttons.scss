@@ -18,7 +18,7 @@
     white-space: nowrap;
     line-height: 1.42857143;
     user-select: none;
-    transition: .3s ease;
+    transition: .2s ease-out;
     padding: .75em 1.875em;
     &:disabled{
         opacity: .75;
@@ -69,7 +69,7 @@
     }
     border: none;
     font-size: 1em;
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     margin: 7.5px 5px;
     position: relative;
     &:not(.fab) .material-icons{
@@ -112,9 +112,9 @@
         }
     }
     &.gray{
-        background-color: $gray;
+        background-color: gray;
         &.simple{
-            color: $gray;
+            color: gray;
         }
     }
     &.blue{

@@ -1,6 +1,6 @@
 .card{
     @include y-shadow(2, .45);
-    border-radius: 2.5px;
+    border-radius: $basic-border-radius;
     overflow: hidden;
     margin: 5px 0px;
     background-color: $raised-area-bg;

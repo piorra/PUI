@@ -11,7 +11,7 @@
 }
 
 .muted-txt{
-    color: $gray !important
+    color: gray !important
 }
 
 .primary-txt{
@@ -39,7 +39,7 @@ blockquote{
     border-left: 5px solid rgba(black, .15);
     font-size: 1.1em;
     padding: 5px 7.5px;
-    margin: 2.5px 5px;
+    margin: $basic-border-radius 5px;
     small, footer{
         color: #888;
         font-size: 80%;
