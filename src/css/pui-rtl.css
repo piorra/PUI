@@ -278,7 +278,8 @@ blockquote {
   right: 0;
 }
 .pui-nav .inner .sidenav:not(.active) {
-  transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
 }
 
 .pui-progress .line {

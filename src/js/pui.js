@@ -179,10 +179,11 @@
                 $ripple.appendTo( $button ).css({
                     'top': yPos,
                     'left': xPos,
-                    'background-color': $color,
+                    'background-color': $color
                 }).addClass('on')
 
                 setTimeout(function () {
+                    $button.addClass('on');
                     $ripple.css({
                         'height': size,
                         'width': size
@@ -190,6 +191,7 @@
                 }, 0);
 
                 el.on(hideEvent, $button, function (e) {
+                    $button.removeClass('on');
                     $ripple.animate({
                         'opacity': 0
                     }, speed*1.5, function () {
